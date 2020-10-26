@@ -2,7 +2,9 @@
 // © awakae
 
 //@version=4
-strategy(title="EMA & SMA & RSI", shorttitle="EMA & SMA & RSI", overlay=true, initial_capital=50000, currency="EUR", default_qty_value=250000)
+strategy(title="EMA & SMA & RSI", shorttitle="EMA & SMA & RSI", overlay=true, initial_capital=50000, currency="EUR", default_qty_value=250000, pyramiding=2)
+
+
 
 // === INPUT BACKTEST RANGE ===
 FromMonth = input(defval=8, title="From Month", minval=1, maxval=12)
@@ -12,24 +14,27 @@ ToMonth = input(defval=10, title="To Month", minval=1, maxval=12)
 ToDay = input(defval=26, title="To Day", minval=1, maxval=31)
 ToYear = input(defval=2020, title="To Year", minval=2010)
 
-//SMA 
-BBbasis = sma(BBprice, 20)
-
-//EMA
-fastEMA = ema(BBprice, 5)
-slowEMA = ema(BBprice, 75)
-
-//RSI
-RSI = rsi(BBprice, 21)
-
-
-
-
 // === Back testing === 
 start = timestamp(FromYear, FromMonth, FromDay, 00, 00)  // backtest start window
 finish = timestamp(ToYear, ToMonth, ToDay, 23, 59)  // backtest finish window
 window() => 
     time >= start and time <= finish ? true : false 
+
+
+//SMA 
+BBbasis = sma(close, 20)
+
+//EMA
+fastEMA = ema(close, 5)
+slowEMA = ema(close, 75)
+
+//RSI
+RSI = rsi(close, 21)
+
+
+
+
+
 
 
 // Chart 
@@ -39,9 +44,9 @@ plot(slowEMA, title="SlowEMA", color=color.yellow)
 
 
 //Strategy
-buy = BBbasis<BBprice and slowEMA<BBprice and fastEMA>slowEMA 
+buy = BBbasis<close and slowEMA<close and fastEMA>slowEMA 
 
-short = BBbasis>BBprice and slowEMA>BBprice and fastEMA<slowEMA 
+short = BBbasis>close and slowEMA>close and fastEMA<slowEMA 
 
 
 
@@ -54,3 +59,10 @@ if (strategy.position_size > 0 and window())
 
 if (strategy.position_size < 0 and window())
     strategy.exit(id="tsl short", from_entry="short", profit=200, trail_points= close * 0.02 / syminfo.mintick, trail_offset=close * 0.02 / syminfo.mintick)
+
+
+
+
+
+
+
