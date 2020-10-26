@@ -41,11 +41,11 @@ def  buy_or_sell(data):
     
 
     # Buy
-    if sma[len(sma)-1]<data[len(data)-1] and slowEMA[len(slowEMA)-1]<data[len(data)-1] and slowEMA[len(slowEMA)-1]<fastEMA[len(fastEMA)-1] and rsi > 50:
+    if sma[len(sma)-1]<data[len(data)-1] and slowEMA[len(slowEMA)-1]<data[len(data)-1] and slowEMA[len(slowEMA)-1]<fastEMA[len(fastEMA)-1] and rsi[len(rsi)] > 50:
         print('Decision => BUY')
         return True
     # Short
-    elif sma[len(sma)-1]>data[len(data)-1] and slowEMA[len(slowEMA)-1]>data[len(data)-1] and slowEMA[len(slowEMA)-1]>fastEMA[len(fastEMA)-1] and rsi < 50:
+    elif sma[len(sma)-1]>data[len(data)-1] and slowEMA[len(slowEMA)-1]>data[len(data)-1] and slowEMA[len(slowEMA)-1]>fastEMA[len(fastEMA)-1] and rsi[len(rsi)] < 50:
         print('Decision => SHORT')
         return False
     # Nothing
