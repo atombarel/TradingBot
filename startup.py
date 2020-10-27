@@ -57,7 +57,7 @@ def  buy_or_sell(data):
 # Make order on FXCM
 def make_order(decision, data, account_id):
     if decision != 42:
-        return(trader.open_trade(account_id=trader.account_id, symbol="EUR/USD", is_buy=decision, amount=250, trailing_step=10, limit=200, stop=-100, is_in_pips=True))
+        return(trader.open_trade(account_id=trader.account_id, symbol="EUR/USD", is_buy=decision, amount=250, trailing_step=10, limit=100, stop=-50, is_in_pips=True))
     return
 
 try:
