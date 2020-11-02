@@ -1,0 +1,183 @@
+Logged in, now getting Account details
+Websocket connected: t4_X_uNzmjCJMnjSABE0
+Number of open position:  0
+Decision => SHORT
+{'status': True, 'response': {'executed': True}, 'data': {'type': 0, 'orderId': 366304805}}
+Number of open position:  1
+Decision => SHORT
+{'status': True, 'response': {'executed': True}, 'data': {'type': 0, 'orderId': 366306109}}
+Websocket closed
+Websocket connected: jsr_e3ckl3TnMW8kABHY
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Logged in, now getting Account details
+Websocket connected: QrzmF47YoH5iKnxYACCW
+Number of open position:  2
+Logged in, now getting Account details
+Websocket connected: RRgGdP6XxAU1wRutACF-
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Websocket closed
+Websocket connected: qBS8ptHTsRkNsqwAACL5
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Websocket closed
+Websocket connected: KT1wkz_vgKEsK0I8ACbs
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Websocket closed
+Websocket connected: HE6ern4dbGvafHHSAC4p
+Websocket closed
+Websocket connected: JQuILGqAol1OA9lCAC8s
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Websocket closed
+Websocket connected: y92KJJr0NGMtdYUbADHJ
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Exception in thread Thread-337482:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/engineio/client.py", line 550, in _read_loop_polling
+    r = self._send_request(
+  File "/usr/local/lib/python3.8/dist-packages/engineio/client.py", line 480, in _send_request
+    return self.http.request(method, url, headers=headers, data=body,
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 416, in send
+    self.cert_verify(conn, request.url, verify, cert)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 227, in cert_verify
+    raise IOError("Could not find a suitable TLS CA certificate bundle, "
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /etc/ssl/certs/ca-certificates.crt
+'open_positions'
+Logged in, now getting Account details
+Websocket connected: Q9NVqLkPPSClaKUiADdy
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Websocket closed
+Websocket connected: MTD88FOo_CeHAAJuADrW
+Number of open position:  2
+Websocket closed
+Websocket connected: XlVm4w_thR8bb51GADs0
+Logged in, now getting Account details
+Websocket connected: Ty_YmIEA2tvlAj7_ADur
+Number of open position:  0
+Decision => SHORT
+{'status': True, 'response': {'executed': True}, 'data': {'type': 0, 'orderId': 366472414}}
+Number of open position:  1
+Decision => SHORT
+{'status': True, 'response': {'executed': True}, 'data': {'type': 0, 'orderId': 366476690}}
+Websocket closed
+Websocket connected: ziBzBzYr7Uoqive-ADzp
+Number of open position:  2
+Websocket closed
+Websocket connected: EWTT_uraki0HrYsxAD56
+Websocket closed
+Websocket connected: 84GLgiWevzux6fyIAD7a
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Websocket closed
+Websocket connected: D19M6g6eDhGhnCGwAEZm
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Websocket closed
+Websocket connected: HNBdcdKlHB7j8upXAFdk
+Number of open position:  1
+Decision => Do nothing
+None
+Number of open position:  1
+Decision => Do nothing
+None
+Websocket closed
+Websocket connected: drfD0r8jGnkd3dfGAFjo
+Number of open position:  1
+Decision => Do nothing
+None
+Number of open position:  1
+Decision => SHORT
+{'status': True, 'response': {'executed': True}, 'data': {'type': 0, 'orderId': 366556185}}
+Websocket closed
+Websocket connected: TpwaKlIpYKtTXgbOAFqE
+Websocket closed
+Websocket connected: RCLq2nc76V3xD3vxAFqN
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Number of open position:  2
+Websocket closed
+Websocket connected: agjnsBUJgCIf1GlsAABm
+Websocket closed
+Websocket connected: nrIvz6b4cTPPXUHoAAD_
+Websocket closed
+Websocket connected: K-phmFIQParONSGEAAE1
+Websocket closed
+Websocket connected: w_Io2uTjkWYPUIJ5AAE2
+Number of open position:  0
+Decision => SHORT
+{'status': True, 'response': {'executed': True}, 'data': {'type': 0, 'orderId': 366573680}}
+Websocket closed
+Websocket connected: 6_EMpSt32EULy6D_AAG4
+Websocket closed
+Websocket connected: y-gWWVIQxICgWIGbAABV
+Number of open position:  1
+Decision => SHORT
+{'status': True, 'response': {'executed': True}, 'data': {'type': 0, 'orderId': 366573880}}
+Websocket closed
+Websocket connected: FIuDzn4ScYirgvEfAAMX
+Websocket closed
+2020-10-31 00:01:09,702 - ae14cfd5becad3099169673a05d66944427dd5d6_demo_d22408fc - ERROR - Failed to send request [{'models': 'OpenPosition'}]: can only concatenate str (not "NoneType") to str
+'open_positions'
+Websocket connected: LdVumxS41ravZEHkAAGL
+Websocket closed
+Websocket connected: CnbwaSCvZW19LoALAAAJ
+Websocket closed
